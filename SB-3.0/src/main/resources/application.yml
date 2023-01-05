@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Spring-Boot-3-bug-reproducer
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost/sb3_bug_repo
+    username: sb3_bug_owner
+    password: test1234
+    hikari:
+      schema: public
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.ddl-auto: validate
