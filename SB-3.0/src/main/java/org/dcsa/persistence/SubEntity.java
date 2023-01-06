@@ -13,9 +13,8 @@ import lombok.*;
 public class SubEntity {
 
     @Id
-    @GeneratedValue
     @Column(name = "id", nullable = false)
-    private Long id;
+    private Long subEntityID;
 
     @Column(name = "name", nullable = false)
     private String name;

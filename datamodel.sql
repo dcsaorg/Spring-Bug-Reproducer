@@ -4,6 +4,7 @@
 DROP DATABASE IF EXISTS sb3_bug_repo;
 DROP USER IF EXISTS sb3_bug_owner;
 CREATE USER sb3_bug_owner WITH PASSWORD 'test1234';
+CREATE DATABASE sb3_bug_repo WITH OWNER sb3_bug_owner;
 \c sb3_bug_repo
 SET ROLE sb3_bug_owner;
 

@@ -12,9 +12,9 @@
 
 
 	<groupId>org.dcsa.jpa-bug</groupId>
-	<artifactId>spring-boot-3.0</artifactId>
+	<artifactId>spring-boot-30</artifactId>
 	<version>${revision}${sha1}${changelist}</version>
-	<packaging>pom</packaging>
+	<packaging>jar</packaging>
 	<name>spring-boot-3.0</name>
 
 	<properties>
@@ -43,17 +43,5 @@
 			<version>1.18.24</version>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-maven-plugin</artifactId>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
-
 
 </project>
