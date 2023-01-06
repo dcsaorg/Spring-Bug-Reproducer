@@ -24,6 +24,7 @@ public class RootEntityService {
     private static Specification<RootEntity> withFilters(String withSubEntityName) {
         return (root, query, builder) -> {
             var predicates = new ArrayList<Predicate>();
+            // Do the JOIN unconditionally to avoid hiding the difference when there is no filtering.
             var subEntityJoin = root.join("subEntities");
             if (withSubEntityName != null) {
                 predicates.add(builder.equal(subEntityJoin.get("name"), withSubEntityName));
